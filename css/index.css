@@ -1,7 +1,135 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 82.6%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 body {
   margin: auto;
-  font-family: 'Barlow Condensed', sans-serif;
   font-size: 18px;
+  font-family: 'Barlow Condensed', sans-serif;
 }
 body .shape {
   position: fixed;
@@ -23,6 +151,7 @@ body .shape {
   margin-top: 85px;
   font-weight: 700;
   width: 100%;
+  padding-left: 5%;
 }
 .navbar .menu {
   padding-top: 18px;
@@ -42,4 +171,62 @@ body .shape {
 }
 .navbar .menu .gray-a {
   color: hsl(230, 11%, 40%);
+}
+.main {
+  margin-top: 10%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.main .content {
+  padding-left: 20%;
+  max-width: 50%;
+}
+.main .content .above-h1 {
+  font-family: 'Barlow', sans-serif;
+  color: hsl(231, 7%, 65%);
+  letter-spacing: 5px;
+  font-weight: bold;
+  padding-bottom: 6%;
+}
+.main .content .above-h1 span {
+  background-color: black;
+  color: white;
+  padding: 1% 2.5%;
+  border-radius: 20px;
+  margin-right: 3%;
+}
+.main .content .main-header {
+  font-weight: bold;
+  font-size: 4rem;
+  padding-bottom: 6%;
+  width: 80%;
+}
+.main .content .below-h1 {
+  color: hsl(230, 11%, 40%);
+  font-family: 'Barlow', sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  width: 40%;
+  padding-bottom: 10%;
+  line-height: normal;
+}
+.btn p {
+  font-family: 'Barlow', sans-serif;
+  color: hsl(231, 7%, 65%);
+  letter-spacing: 3px;
+  word-spacing: 7px;
+  font-size: 1rem;
+}
+.btn p button {
+  border: none;
+  background-color: hsl(0, 100%, 68%);
+  color: white;
+  padding: 2% 6%;
+  border-radius: 7px;
+  margin-right: 3%;
+  cursor: pointer;
+}
+.btn p button:hover {
+  opacity: 0.7;
 }
