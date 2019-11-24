@@ -1,12 +1,28 @@
 body {
+  margin: auto;
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 18px;
+}
+body .shape {
+  position: fixed;
+  height: 570px;
+  padding: 0px;
+  background-color: hsl(207, 33%, 95%);
+  border-radius: 60px;
+  transform: rotate(0deg) skew(0deg);
+  -webkit-transform: rotate(0deg) skew(0deg);
+  border-top: 0px transparent;
+  z-index: -1;
+  width: 50%;
+  top: -50px;
+  right: -55px;
 }
 .navbar {
   display: flex;
   justify-content: space-around;
   margin-top: 85px;
   font-weight: 700;
+  width: 100%;
 }
 .navbar .menu {
   padding-top: 18px;
@@ -15,6 +31,9 @@ body {
   text-decoration: none;
   color: black;
   margin-left: 57px;
+}
+.navbar .menu a:hover {
+  text-decoration: underline;
 }
 .navbar .menu span {
   margin-left: 57px;
